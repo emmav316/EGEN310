@@ -21,7 +21,7 @@ void loop() {
 
   delay(1000);
 
-  if(120 < sensor_value and sensor_value < 150){
+  if(120 < sensor_value && sensor_value < 150){
     //insert relay activation here
   }
   
