@@ -23,6 +23,7 @@ void loop() {
 
   if(120 < sensor_value && sensor_value < 150){
     //insert relay activation here
+    digitalWrite(RELAY_PIN, HIGH);
   }
   
 }
