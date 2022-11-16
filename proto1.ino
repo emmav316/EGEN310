@@ -1,6 +1,6 @@
 #define POWER_PIN  7
 #define SIGNAL_PIN A5
-#define RELAY_PIN 10
+#define RELAY_PIN A0
 
 int value = 0; // variable to store the sensor value
 
