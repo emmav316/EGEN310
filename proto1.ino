@@ -1,6 +1,6 @@
 #define POWER_PIN  7
 #define SIGNAL_PIN A5
-#define RELAY_PIN A0
+#define RELAY_PIN 8
 
 int value = 0; // variable to store the sensor value
 
@@ -22,10 +22,10 @@ void loop() {
   delay(1000);
 
   if(120 < sensor_value && sensor_value < 150){
-     digitalWrite(8,LOW);
+     digitalWrite(RELAY_PIN,LOW);
   }
   else{
-    digitalWrite(8,HIGH);
+    digitalWrite(RELAY_PIN,HIGH);
   }
 }
 
