@@ -24,18 +24,14 @@ void loop(){
 
   delay(1000);
 
-  if(sensor_value > 1){ //120 < sensor_value && sensor_value < 150
-    servo1.write(0);
-    delay(1000);
+  if(140 < sensor_value && sensor_value < 150){ //alter values if this does not work correctly
     servo1.write(90);
     delay(1000);
+
+  }
+  else{
     servo1.write(180);
     delay(1000);
   }
-  else{
-    Serial.print("else servo");
-  }
 }
-
-
 
